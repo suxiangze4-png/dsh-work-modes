@@ -1,0 +1,3 @@
+- insert:
+    - id: work-modes-probe
+      name: dsh-work-modes-probe
