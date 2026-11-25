@@ -113,7 +113,7 @@ export function InterviewBuilder({ call, changed, memory, openSession, subscribe
       h('div', null, h('h2', null, '1. 创建角色需求访谈'),
         h(InheritSwitch, { mode, disabled: busy, onChange: setMode }),
         h('div', { className: 'fields' },
-          h('label', null, '你想创建什么角色？', h('textarea', { className: 'need', value: need, maxLength: 2000, disabled: busy, onChange: e => setNeed(e.target.value), placeholder: '例如：设计一个适合我当前基础的 C 语言指针学习教练。' }))),
+          h('label', null, '你想创建什么角色？', h('textarea', { className: 'need', value: need, maxLength: 2000, disabled: busy, onChange: e => setNeed(e.target.value), placeholder: '例如：设计一个高数专业老师角色，来帮我高效地学习高数。' }))),
         h('button', { className: 'primary', disabled: busy || !need.trim(), onClick: create }, '创建访谈并打开（尚不调用模型）'),
         h('p', null, '打开后点击“开始访谈”，或在正常输入框提交需求，才会调用已配置的模型。访谈沿用原生用户和项目上下文，不复制来源聊天历史。'),
         h('h2', { style: { marginTop: 24 } }, '2. 选择已有访谈'),
