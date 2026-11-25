@@ -6,7 +6,7 @@
   "description": "DSH Work Modes：用户分类管理、AI 访谈建卡与专业角色工作会话",
   "engines": { "node": ">=24.9.0", "dsh": "0.2.1-rc.2 || 0.2.2-rc.1 || 0.2.2-rc.5 || 0.2.3-alpha.2" },
   "exports": { ".": "./src/index.js", "./client": "./dist/client.js", "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg" },
-  "files": ["src", "dist", "roles", "templates", "locale", "licenses", "THIRD_PARTY_NOTICES.md", "icon.svg", "cordis.patch.yml", "README.md"],
+  "files": ["src", "dist", "roles", "templates", "locale", "licenses", "docs", "CHANGELOG.md", "THIRD_PARTY_NOTICES.md", "icon.svg", "cordis.patch.yml", "README.md"],
   "scripts": { "build": "node scripts/build.mjs", "test": "vitest run --config vitest.config.js", "check": "node scripts/check.mjs" },
   "dependencies": { "zod": "4.4.3" },
   "peerDependencies": {
