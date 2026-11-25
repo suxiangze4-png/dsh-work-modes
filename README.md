@@ -1,10 +1,8 @@
 # DSH Work Modes
 
-为 DSH 会话选择一套专业工作规范。
-
 Work Modes 是 DeepSeek Harness（DSH）的原生插件。它管理 Markdown `AGENTS.md` 角色卡，让排错、学习、研究和写作等会话使用各自的职责、流程与输出要求。
 
-当前版本为 **0.5.2**，仓库处于私有审核阶段，实际使用截图待补。版本记录见 [CHANGELOG](CHANGELOG.md)。
+当前版本为 **0.5.2**。版本记录见 [CHANGELOG](CHANGELOG.md)。
 
 ## 它怎样工作
 
@@ -45,22 +43,29 @@ Work Modes 是 DeepSeek Harness（DSH）的原生插件。它管理 Markdown `AG
 
 ## 界面预览
 
-以下位置留待补入实际插件截图。拍摄范围与文件命名见[截图补充说明](docs/screenshots/README.md)。
+### 角色库与手动建卡
 
-| 展示位置 | 想展示的操作 | 图片状态 |
-| --- | --- | --- |
-| 角色库 | 列表、关键词、分类和正文编辑区 | 待补实拍 |
-| 手动建卡 | 顶部继承开关、简短说明计数和 Markdown 正文 | 待补实拍 |
-| AI 审核 | 草稿内容、分类、准备审核和确认保存 | 待补实拍 |
-| 工作会话 | 当前角色、绑定版本和锁定状态 | 待补实拍 |
-| 版本历史 | 同一张卡的 v1、v2 与旧会话绑定 | 待补实拍 |
-| 窄窗口与主题 | 窄面板中的操作区、浅色和深色 | 待补实拍 |
+左侧按关键词和分类查找角色，右侧设置继承模式并编辑 Markdown 工作规范。
+
+![角色库中的列表、筛选和新角色编辑区](docs/screenshots/01-role-library.png)
+
+### AI 需求访谈
+
+输入「测试用例」后，AI 追问角色是负责编写、评审，还是两者都做，并询问交付格式。
+
+![测试用例角色的 AI 访谈及审核入口](docs/screenshots/02-ai-interview.png)
+
+### 工作会话的角色绑定
+
+此会话已锁定在 v2。角色归档后仍可供原会话使用。
+
+![工作会话显示已锁定的 v2 和仅供原会话使用的角色](docs/screenshots/03-session-binding.png)
 
 ## 兼容与验证
 
 下表记录 **2026-11-24** 对 0.5.2 的验证结果，兼容声明按受测版本列出。
 
-| DSH 版本 | 集成测试 | 本轮桌面验证 |
+| DSH 版本 | 集成测试 | 桌面验证 |
 | --- | --- | --- |
 | 0.2.1-rc.2 | 57 / 57 通过 | 沿用既有桌面记录 |
 | 0.2.2-rc.1 | 57 / 57 通过 | 沿用既有桌面记录 |
@@ -81,6 +86,4 @@ Work Modes 是 DeepSeek Harness（DSH）的原生插件。它管理 Markdown `AG
 - [使用指南与常见问题](docs/USER_GUIDE.md)
 - [开发、数据结构与验证](docs/DEVELOPMENT.md)
 - [版本记录](CHANGELOG.md)
-- [本轮审核清单](docs/REVIEW.md)
-- [截图补充说明](docs/screenshots/README.md)
 - [第三方来源与许可](THIRD_PARTY_NOTICES.md)
