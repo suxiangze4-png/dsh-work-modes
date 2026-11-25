@@ -1,6 +1,6 @@
 {
   "name": "dsh-work-modes-probe",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "private": true,
   "type": "module",
   "description": "DSH Work Modes：用户分类管理、AI 访谈建卡与专业角色工作会话",

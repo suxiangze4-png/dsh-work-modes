@@ -1,6 +1,6 @@
 # 安装、更新和卸载
 
-当前插件包名为 `dsh-work-modes-probe`，版本为 **0.5.2**。安装前先核对 DSH 的完整版本。受测版本见[仓库首页](../README.md)。
+当前插件包名为 `dsh-work-modes-probe`，版本为 **0.5.3**。安装前先核对 DSH 的完整版本。受测版本见[仓库首页](../README.md)。
 
 ## 准备条件
 
@@ -15,12 +15,12 @@ dsh --version
 
 ## 下载并安装
 
-打开 [Work Modes 0.5.2 发布页](https://github.com/suxiangze4-png/dsh-work-modes/releases/tag/v0.5.2)，在附件区下载 [dsh-work-modes-probe-0.5.2.tgz](https://github.com/suxiangze4-png/dsh-work-modes/releases/download/v0.5.2/dsh-work-modes-probe-0.5.2.tgz)。该附件已包含构建好的前端，保持 `.tgz` 文件原样即可安装。仓库处于私有状态时，请先在浏览器登录有仓库访问权限的 GitHub 账号。
+打开 [Work Modes 0.5.3 发布页](https://github.com/suxiangze4-png/dsh-work-modes/releases/tag/v0.5.3)，在附件区下载 [dsh-work-modes-probe-0.5.3.tgz](https://github.com/suxiangze4-png/dsh-work-modes/releases/download/v0.5.3/dsh-work-modes-probe-0.5.3.tgz)。该附件已包含构建好的前端，保持 `.tgz` 文件原样即可安装。
 
 通过 DSH 的「应用 → 退出」完全退出桌面端。使用包的绝对路径安装，将下面的路径替换为实际位置。
 
 ```powershell
-dsh plugin --profile desktop add 'file:C:/packages/dsh-work-modes-probe-0.5.2.tgz'
+dsh plugin --profile desktop add 'file:C:/packages/dsh-work-modes-probe-0.5.3.tgz'
 ```
 
 重新打开 DSH，确认左侧出现「角色库」。若插件管理页显示尚未启用，先启用再完整退出重开。

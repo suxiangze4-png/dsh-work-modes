@@ -1,6 +1,6 @@
 # 开发与验证说明
 
-运行版本为 0.5.2。产品操作见[使用指南](USER_GUIDE.md)，安装包构建见[安装说明](INSTALLATION.md)。
+产品操作见[使用指南](USER_GUIDE.md)，当前版本和安装包构建见[安装说明](INSTALLATION.md)。
 
 ## 请求与数据流
 

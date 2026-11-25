@@ -2,7 +2,7 @@
 
 Work Modes 是 DeepSeek Harness（DSH）的原生插件。它管理 Markdown `AGENTS.md` 角色卡，让排错、学习、研究和写作等会话使用各自的职责、流程与输出要求。
 
-当前版本为 **0.5.2**。版本记录见 [CHANGELOG](CHANGELOG.md)。
+当前版本为 **0.5.3**。版本记录见 [CHANGELOG](CHANGELOG.md)。
 
 ## 它怎样工作
 
@@ -22,7 +22,7 @@ Work Modes 是 DeepSeek Harness（DSH）的原生插件。它管理 Markdown `AG
 
 ## 快速开始
 
-1. 从 [GitHub Releases](https://github.com/suxiangze4-png/dsh-work-modes/releases/tag/v0.5.2) 下载 `dsh-work-modes-probe-0.5.2.tgz`，按[安装说明](docs/INSTALLATION.md)装入 DSH 桌面端。
+1. 从 [GitHub 最新发布页](https://github.com/suxiangze4-png/dsh-work-modes/releases/latest) 下载 `.tgz` 附件，按[安装说明](docs/INSTALLATION.md)装入 DSH 桌面端。
 2. 打开 DSH 左侧「角色库」，选择「新建角色」。填写名称，把完整 Markdown 粘到「AGENTS.md 工作规范」，保存为 v1。
 3. 打开一个 DSH 会话，点输入框上方的 **⌃** 展开 Work Modes。
 4. 用途选择「正常工作（调用模型）」，选中角色并点击「新建工作会话」。
@@ -63,7 +63,7 @@ Work Modes 是 DeepSeek Harness（DSH）的原生插件。它管理 Markdown `AG
 
 ## 兼容与验证
 
-下表记录 **2026-11-24** 对 0.5.2 的验证结果，兼容声明按受测版本列出。
+下表记录 **2026-11-24** 对 0.5.2 的验证结果。0.5.3 更新了 AI 建卡的示例文案，沿用相同的宿主兼容范围。
 
 | DSH 版本 | 集成测试 | 桌面验证 |
 | --- | --- | --- |
