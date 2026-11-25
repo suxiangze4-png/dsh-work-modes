@@ -6,32 +6,16 @@
 
 - Windows 桌面上的 DSH 已至少启动过一次，用于初始化 `desktop` 配置。
 - 已能在 PowerShell 中运行 `dsh --version`。如果命令未安装，可先在 DSH 的「应用 → 管理 dsh 命令」中安装。
-- 从源码构建需要 Node.js ≥ 24.9.0 和 npm。运行 DSH 0.2.3-alpha.2 的测试环境需要 Node.js 24.22.3+（24.x）或 26.13.1+，桌面包自带对应运行时。
 
 ```powershell
 dsh --version
-node --version
-npm --version
 ```
 
 当前验收主要覆盖 Windows x64。其他平台需要补充平台验证。
 
-## 从源码构建
+## 下载并安装
 
-获取源码并进入项目目录。使用 Git 克隆时，私有仓库需要有访问权限。下面的命令获取默认分支。
-
-```powershell
-git clone https://github.com/suxiangze4-png/dsh-work-modes.git
-Set-Location .\dsh-work-modes
-npm ci
-npm run check
-npm run build
-npm pack
-```
-
-`npm ci` 按锁文件安装开发依赖；`check` 检查源码语法；`build` 生成前端文件；`pack` 生成可安装的 `.tgz` 包。0.5.2 源码生成的包名为 `dsh-work-modes-probe-0.5.2.tgz`。
-
-## 安装本地包
+打开 [Work Modes 0.5.2 发布页](https://github.com/suxiangze4-png/dsh-work-modes/releases/tag/v0.5.2)，在附件区下载 [dsh-work-modes-probe-0.5.2.tgz](https://github.com/suxiangze4-png/dsh-work-modes/releases/download/v0.5.2/dsh-work-modes-probe-0.5.2.tgz)。该附件已包含构建好的前端，保持 `.tgz` 文件原样即可安装。仓库处于私有状态时，请先在浏览器登录有仓库访问权限的 GitHub 账号。
 
 通过 DSH 的「应用 → 退出」完全退出桌面端。使用包的绝对路径安装，将下面的路径替换为实际位置。
 
@@ -55,6 +39,21 @@ dsh plugin --profile desktop list dsh-work-modes-probe --depth 0
 4. 重开 DSH，核对角色库、分类、历史版本和旧会话绑定。
 
 角色正文与元数据保存于宿主数据目录，更新包沿用原存储域。原有链接安装也可替换为本地包安装。
+
+## 从源码构建
+
+需要 Node.js ≥ 24.9.0 和 npm。获取源码并在项目目录运行以下命令。
+
+```powershell
+git clone https://github.com/suxiangze4-png/dsh-work-modes.git
+Set-Location .\dsh-work-modes
+npm ci
+npm run check
+npm run build
+npm pack
+```
+
+`npm ci` 按锁文件安装依赖，`check` 检查源码语法，`build` 生成前端文件，`pack` 生成可按上文安装的 `.tgz` 文件。宿主集成测试的 Node.js 版本要求见[开发与验证说明](DEVELOPMENT.md#配置测试运行时)。
 
 ## 链接安装用于开发
 

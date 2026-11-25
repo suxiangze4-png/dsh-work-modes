@@ -22,7 +22,7 @@ Work Modes 是 DeepSeek Harness（DSH）的原生插件。它管理 Markdown `AG
 
 ## 快速开始
 
-1. 按[安装说明](docs/INSTALLATION.md)构建并安装插件。
+1. 从 [GitHub Releases](https://github.com/suxiangze4-png/dsh-work-modes/releases/tag/v0.5.2) 下载 `dsh-work-modes-probe-0.5.2.tgz`，按[安装说明](docs/INSTALLATION.md)装入 DSH 桌面端。
 2. 打开 DSH 左侧「角色库」，选择「新建角色」。填写名称，把完整 Markdown 粘到「AGENTS.md 工作规范」，保存为 v1。
 3. 打开一个 DSH 会话，点输入框上方的 **⌃** 展开 Work Modes。
 4. 用途选择「正常工作（调用模型）」，选中角色并点击「新建工作会话」。
